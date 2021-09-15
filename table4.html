@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h2>표구성</h2>
+        <table>
+            <caption>표제목</caption>
+            <!-- colgroup은 반드시 caption뒤에 와야 함. 전체 열의 개수만큼 col써주기-->
+            <colgroup><!-- 특정 열에 배경색을 넣거나 너비를 바꿀 때 사용.-->
+                <col style="background-color: #eee;">
+                <col>
+                <col style="width:150px;">
+                <col style="width:150px;">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>목록1</th>
+                    <th>목록2</th>
+                    <th>목록3</th>
+                    <th>목록4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">목록</td>
+                    <td>내용(1,1)</td>
+                    <td>내용(1,2)</td>
+                    <td>내용(1,3)</td>
+                </tr>
+                <tr>
+                    <td>내용(2,1)</td>
+                    <td>내용(2,2)</td>
+                    <td>내용(2,3)</td>
+                </tr>
+                <tr>
+                    <th>목록</td>
+                    <td colspan="3">내용(2,3)</td>
+                </tr>
+                <tr>
+                    <th>목록</td>
+                    <td>내용(2,1)</td>
+                    <td>내용(2,2)</td>
+                    <td>내용(2,3)</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </body>
+</html>
